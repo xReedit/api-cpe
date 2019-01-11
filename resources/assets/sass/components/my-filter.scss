@@ -1,0 +1,31 @@
+.filter-row {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  > div {
+    margin-right: 10px;
+  }
+}
+
+.filter-group {
+  margin-left: 10px;
+  display: flex;
+}
+
+.filter-controls {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  align-items: center;
+  > div:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.el-tag {
+  span {
+    color: #409EFF;
+  }
+}

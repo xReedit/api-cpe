@@ -1,0 +1,6 @@
+.el-pagination span:not([class*=suffix]),
+.el-pagination button,
+.el-pager li {
+  font-size: $global-form-font-size;
+}
+

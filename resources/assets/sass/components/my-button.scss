@@ -1,0 +1,8 @@
+.el-button + .el-button {
+  margin-left: 5px;
+}
+.el-button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: $global-form-font-size;
+}

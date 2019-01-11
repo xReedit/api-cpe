@@ -1,0 +1,18 @@
+.el-dialog {
+  width: 700px;
+}
+
+.el-dialog__title {
+  font-size: 16px;
+  color: #0e0b20;
+  font-weight: 700;
+}
+
+.el-dialog__body {
+  padding: 10px 20px 20px;
+  color: rgba(0,0,0,.85);
+  font-size: $global-form-font-size;
+  .uk-form-label {
+    font-weight: 500;
+  }
+}

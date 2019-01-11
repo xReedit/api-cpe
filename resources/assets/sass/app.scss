@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+$body-family: "Nunito Sans", sans-serif;
+$body-color: #514d6a;
+$body-weight: 400;
+$body-size: 13px;
+$column-gap: .5rem;
+$primary: #409EFF;
+
+$navbar-item-color: #b8beca;
+$navbar-item-active-background-color: #409EFF;
+$navbar-item-active-color: #fff;
+$navbar-item-hover-color: #fff;
+$navbar-item-hover-background-color: #409EFF;
+$navbar-dropdown-border-top: 0;
+$navbar-dropdown-item-hover-color: #08f;
+$navbar-dropdown-item-hover-background-color: #e6f8ff;
+$navbar-divider-background-color: #e8e8e8;
+$navbar-divider-height: 1px;
+$navbar-dropdown-arrow: #e4e9f0;
+
+$card-shadow: none;
+
+$table-cell-padding: 0.75em;
+
+@import "../../../node_modules/bulma/bulma";
+@import "~element-ui/packages/theme-chalk/src/index";
+
+@import "layouts/app";
+@import "layouts/auth";
+
+$global-form-font-size: 12px;
+
+@import "components/my-control";
+@import "components/my-dialog";
+@import "components/my-input";
+@import "components/my-select";
+@import "components/my-checkbox";
+@import "components/my-button";
+@import "components/my-table";
+@import "components/my-pagination";
+@import "components/my-card";
+@import "components/my-tab";
+@import "components/my-upload";
+@import "components/my-filter";
+@import "custom";

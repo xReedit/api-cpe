@@ -1,0 +1,116 @@
+{
+    "descripcion" : "precio de iten y total se mantienen, el precio total se agrega en total inafecta",
+
+    "datos_de_la_factura_electronica":{
+        "version_del_ubl":"v20",
+        "numeracion_conformada_por_serie_y_numero_correlativo":"F001-23",
+        "fecha_de_emision":"2018-09-05",
+        "hora_de_emision":"11:11:11",
+        "tipo_de_documento":"01",
+        "tipo_de_moneda_en_la_cual_se_emite_la_factura_electronica":"PEN",
+        "fecha_de_vencimiento":"2018-09-05"
+    },
+
+    "datos_del_emisor":{
+        "numero_de_ruc":{
+            "numero_ruc":"20501973522",
+            "tipo_de_documento":"6"
+        },
+        "nombre_comercial":"Factura Inafecta",
+        "apellidos_y_nombres_denominacion_o_razon_social":"Factura Inafecta SAC"
+
+    },
+
+    "datos_adicionales_lugar_en_el_que_se_entrega_el_bien_o_se_presta_el_servicio":{
+        "codigo_del_domicilio_fiscal_o_de_local_anexo_del_emisor":"0001"
+    },
+
+    "datos_del_cliente_o_receptor":{
+        "tipo_y_numero_de_documento_de_identidad_del_adquirente_o_usuario":{
+            "numero_de_documento":"10417844358",
+            "tipo_de_documento":"6"
+        },
+        "apellidos_y_nombres_denominacion_o_razon_social_del_adquirente_o_usuario":"Pancho"
+    },
+
+
+    "items":[
+        {
+            "datos_del_detalle_o_item":{
+                "numero_de_orden_del_item":"1",
+                "unidad_de_medida_por_item":"CS",
+                "cantidad_de_unidades_por_item":"1",
+                "codigo_producto_de_sunat":"51121703"
+            },
+            "informacion_adicional_gastos_art_37_renta":{
+                "descripcion_detallada_del_servicio_prestado_bien_vendido_o_cedido_en_uso_indicando_las_caracteristicas":"Inca Kola 250 ml",
+                "valor_unitario_por_item":"100",
+                "precio_de_venta_unitario_por_item_y_codigo":{
+                    "codigo_de_tipo_de_precio":"01"
+                },
+                "valor_referencial_unitario_por_item_en_operaciones_no_onerosas_y_codigo":{
+                    "codigo_de_tipo_de_precio":"02"
+                },
+                "afectacion_al_igv_por_item":{
+                    "monto_de_igv":"18",
+                    "afectacion_al_igv":"10"
+                },
+                "sistema_de_isc_por_item":{
+                    "monto_de_isc":"0"
+                },
+                "valor_de_venta_por_item":"100",
+                "descuentos_por_item":{
+                    "monto_del_descuento":"0"
+                }
+            }
+        }
+    ],
+
+
+    "totales":{
+        "total_valor_de_venta_exportacion":{
+            "monto":"0"
+        },
+        "total_valor_de_venta_operaciones_gravadas":{
+            "monto":"0"
+        },
+        "total_valor_de_venta_operaciones_inafectas":{
+            "monto":"100"
+        },
+        "total_valor_de_venta_operaciones_exoneradas":{
+            "monto":"0"
+        },
+        "total_valor_de_venta_operaciones_gratuitas":{
+            "total_valor_venta_operaciones_gratuitas":"0"
+        },
+        "total_descuentos":{
+            "monto":"0"
+        },
+        "sumatoria_igv":{
+            "sumatoria_igv_amount":"0"
+        },
+        "sumatoria_isc":{
+            "sumatoria_isc_amount":"0"
+        },
+        "sumatoria_otros_tributos":{
+            "sumatoria_otros_tributos_amount":"0"
+        },
+        "descuentos_globales":"0",
+        "sumatoria_otros_cargos":"0",
+        "importe_total_de_la_venta_cesion_en_uso_o_del_servicio_prestado":"100"
+    },
+
+    "informacion_adicional_anticipos":{
+        "informacion_prepagado_o_anticipado":{
+            "serie_y_numero_de_documento_que_se_realizo_el_anticipo":"123-123",
+            "tipo_de_comprobante_que_se_realizo_el_anticipo":"",
+            "tipo_de_documento_del_emisor_del_anticipo":""
+        },
+        "total_anticipos":"0"
+    },
+
+    "informacion_adicional":{
+
+        "tipo_de_operacion":"01"
+    }
+}

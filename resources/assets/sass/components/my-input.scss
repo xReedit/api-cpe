@@ -1,0 +1,28 @@
+.el-input__inner {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: $global-form-font-size;
+  color: rgba(0,0,0,.65);
+}
+
+.field {
+  position: relative;
+  .label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .help.is-danger {
+    font-size: .8rem;
+    position: absolute;
+    bottom: -15px;
+  }
+  .control {
+    margin-bottom: .5em;
+  }
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+.el-table {
+  font-size: $global-form-font-size;
+}
+.el-table th, .el-table td {
+  padding: 3px 0;
+}
+.el-table th {
+  color: rgba(0,0,0,.85);
+  font-weight: 500;
+  background-color: #f2f4f8;
+}
+
+.el-table td {
+  color: rgba(0, 0, 0, .65);
+}
+
+.el-table .sort-caret {
+  border-width: 4px;
+}
+
+.el-table .sort-caret.ascending {
+  border-bottom-color: rgba(0, 0, 0, .45);
+  top: 7px;
+}
+
+.el-table .sort-caret.descending {
+  border-top-color: rgba(0, 0, 0, .45);
+  bottom: 7px;
+}
+
+.table-actions {
+  .el-button.el-button--small {
+    font-size: 16px;
+    padding: 3px 6px;
+  }
+}
+
+.table td {
+  vertical-align: middle;
+}
