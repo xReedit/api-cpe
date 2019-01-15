@@ -624,8 +624,8 @@ class TransformInput
                 'establishment' => [
                     'code' => array_key_exists('codigo_del_domicilio_fiscal_o_de_local_anexo_del_emisor', $inputs['datos_adicionales_lugar_en_el_que_se_entrega_el_bien_o_se_presta_el_servicio'])?$inputs['datos_adicionales_lugar_en_el_que_se_entrega_el_bien_o_se_presta_el_servicio']['codigo_del_domicilio_fiscal_o_de_local_anexo_del_emisor']:'',
                 //                    'location_code' => array_key_exists('CodigoUbigeo', $inputs['Emisor'])?$inputs['Emisor']['CodigoUbigeo']:'',
-                //                    'address' => array_key_exists('Direccion', $inputs['Emisor'])?$inputs['Emisor']['Direccion']:'',
-                //                    'department' => array_key_exists('Departamento', $inputs['Emisor'])?$inputs['Emisor']['Departamento']:'',
+                                   'address' => array_key_exists('Direccion', $inputs['Emisor'])?$inputs['Emisor']['Direccion']:'',
+                                   'department' => array_key_exists('Departamento', $inputs['Emisor'])?$inputs['Emisor']['Departamento']:'',                                   
                 //                    'province' => array_key_exists('Provincia', $inputs['Emisor'])?$inputs['Emisor']['Provincia']:'',
                 //                    'district' => array_key_exists('Distrito', $inputs['Emisor'])?$inputs['Emisor']['Distrito']:'',
                 //                    'country_code' => array_key_exists('CodigoPais', $inputs['Emisor'])?$inputs['Emisor']['CodigoPais']:'',
@@ -633,7 +633,8 @@ class TransformInput
                 'customer' => [
                     'identity_document_type_code' => $inputs['datos_del_cliente_o_receptor']['tipo_y_numero_de_documento_de_identidad_del_adquirente_o_usuario']['tipo_de_documento'],
                     'number' => $inputs['datos_del_cliente_o_receptor']['tipo_y_numero_de_documento_de_identidad_del_adquirente_o_usuario']['numero_de_documento'],
-                    'name' => $inputs['datos_del_cliente_o_receptor']['apellidos_y_nombres_denominacion_o_razon_social_del_adquirente_o_usuario'], //cliente
+                    'name' => $inputs['datos_del_cliente_o_receptor']['apellidos_y_nombres_denominacion_o_razon_social_del_adquirente_o_usuario'], //cliente                    
+                    'address' => $inputs['datos_del_cliente_o_receptor']['direccion_del_adquiriente_o_usuario'], //cliente
                 ],
                 'details' => $details,
                 'guides' => $guides,

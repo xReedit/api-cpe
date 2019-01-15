@@ -35,7 +35,7 @@
             <table width="100%" height="200px" border="0" align="center" cellpadding="0" cellspacing="0">
                 <tbody><tr>
                     <td width="50%" height="90" align="center">
-{{--                        <span><img src="data:image/jpeg;base64,{{ $document->optional->logo }}" height="80" style="text-align:center" border="0"></span>--}}
+{{--                        <span><img src="data:image/jpeg;base64,{{ $document->optional->logo }}" height="30" style="text-align:center" border="0"></span>--}}
                     </td>
                     <td width="5%" height="40" align="center"></td>
                     <td width="45%" rowspan="2" valign="bottom" style="padding-left:0">

@@ -115,7 +115,7 @@
             padding: 3px 10px;
         }
         .company_logo {
-            height: 150px;
+            height: 80px;
         }
     </style>
 </head>
@@ -125,14 +125,19 @@
         <td width="60%">
             <table class="voucher-company-left">
                 <tbody>
-                <tr><td class="text-center font-xxlg font-bold">{{ $company->name }}</td></tr>
+                <!-- <tr><td class="text-center font-xxlg font-bold">{{ $company->name }}</td></tr> -->
                 @if($document->optional->logo)
-                <tr><td class="text-center font-xxlg font-bold"><img src="data:image/jpeg;base64,{{ $document->optional->logo }}" class="company_logo"></td></tr>
+                <tr><td class="text-center font-bold"><img src="data:image/jpeg;base64,{{ $document->optional->logo }}" class="company_logo" ></td></tr>
                 @endif
+                
+                <!-- <tr><td class="text-center">{{ $establishment->address }}</td></tr> -->
+                <!-- <tr><td class="text-center">{{ $establishment->department }}</td></tr> -->
+
                 {{--<tr><td class="text-center">{{ $establishment->address.' - '.--}}
                                                {{--$establishment->location->name }}</td></tr>--}}
-                {{--<tr><td class="text-center">{{ $establishment->address }}</td></tr>--}}
-{{--                <tr><td class="text-center">{{ $establishment->department }}-{{ $establishment->province }}-{{ $establishment->district }}</td></tr>--}}
+                <tr><td class="text-center">{{ $establishment->address }} | {{ $establishment->department }}</td></tr>
+                <!-- {{--<tr><td class="text-center">{{ $establishment->department }}</td></tr>--}} -->
+<!-- {{--                <tr><td class="text-center">{{ $establishment->department }}-{{ $establishment->province }}-{{ $establishment->district }}</td></tr>--}} -->
                 {{--<tr><td class="text-center">Teléfonos: {{ $establishment->phone }}</td></tr>--}}
                 {{--<tr><td class="text-center">{{ $establishment->email }}</td></tr>--}}
                 {{--<tr><td class="text-center">{{ $company->web }}</td></tr>--}}
@@ -157,6 +162,12 @@
                 <tbody>
                 <tr><td width="20%">Cliente:</td><td width="80%">{{ $customer->name }}</td></tr>
                 <tr><td width="20%">{{ $identity_document_type_description_array[$customer->identity_document_type_code] }}:</td><td width="70%">{{ $customer->number }}</td></tr>
+
+                @if (isset($customer->address))
+                <tr><td width="20%">Dirección:</td><td width="80%">{{ $customer->address }}</td></tr>
+                @endif
+
+
                 {{--@if (isset($customer->address))--}}
                 @if($customer->identity_document_type_code === '6')
                     {{--<tr><td width="20%">Dirección:</td><td width="80%">{{ $customer->address }}-{{ $customer->address }}</td></tr>--}}
