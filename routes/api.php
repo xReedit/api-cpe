@@ -26,4 +26,4 @@ Route::group(['middleware' => ['auth:api']], function () {
 
 //Route::post('v2/sendXml', 'Api\DocumentController@sendXml');
 
-// Route::get('documents/download/{type}/{external_id}', 'Api\DocumentController@download');
+Route::get('documents/download/{type}/{external_id}', 'DocumentController@download');
