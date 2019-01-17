@@ -20,7 +20,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
         \App\Http\Middleware\Cors::class,
-        //\Barryvdh\Cors\HandleCors::class,
+        \Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
@@ -63,6 +63,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'transform.input' => \App\Http\Middleware\TransformInput::class,
         'cors' => \App\Http\Middleware\Cors::class, 
-        // 'cors' => \Barryvdh\Cors\HandleCors::class,
+        'cors' => \Barryvdh\Cors\HandleCors::class,
     ];
 }

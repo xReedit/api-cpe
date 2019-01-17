@@ -9,20 +9,10 @@ return [
      | to accept any value.
      |
      */
-    'defaults' => array(
-        'supportsCredentials' => false,
-        'allowedOrigins' => array('*'),
-        'allowedHeaders' => array('*'),
-        'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
-        'maxAge' => 3600,
-        'exposedHeaders' => array(),
-        'hosts' => array(),
-    ),
-
-    'supportsCredentials' => false,
-    'allowedOrigins' => ['*'],
-    'allowedHeaders' => ['Content-Type', 'X-Requested-With', 'application/json'],
-    'allowedMethods' => ['*'], // ex: ['GET', 'POST', 'PUT',  'DELETE']
-    'exposedHeaders' => [],
+    
+    'supportCredentials ' => false, 'allowedOrigins' => ['*'], // ex: ['abc.com', 'api.abc.com'] 
+    'allowedHeaders' => ['*'], 
+    'allowedMethods' => ['*'], // ex: ['GET', 'POST', 'PUT', 'DELETE'] 
+    'exposedHeaders' => [], 
     'maxAge' => 0,
 ];
