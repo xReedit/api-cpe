@@ -8,7 +8,7 @@
 // Route::apiResource('documents', 'DocumentController')->middleware('cors');
 // Route::apiResource('send_xml', 'DocumentController')->middleware('cors');
 
-Route::group(['middleware' => ['auth:api']], function () {
+Route::group(['middleware' => ['auth:api', 'cors']], function () {
     Route::get('services/ruc/{number}', 'Api\ServiceController@ruc');
     Route::get('services/dni/{number}', 'Api\ServiceController@dni');
 

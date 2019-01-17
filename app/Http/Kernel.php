@@ -19,7 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
-        \Barryvdh\Cors\HandleCors::class,
+        //\Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
@@ -35,8 +35,8 @@ class Kernel extends HttpKernel
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        ],
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,            
+        ],        
 
         'api' => [
             'throttle:60,1',
@@ -61,6 +61,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'transform.input' => \App\Http\Middleware\TransformInput::class,
+        'cors' => \App\Http\Middleware\Cors::class, 
         // 'cors' => \Barryvdh\Cors\HandleCors::class,
     ];
 }
