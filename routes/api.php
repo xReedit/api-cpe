@@ -1,14 +1,10 @@
 <?php
-// header('Access-Control-Allow-Origin: *');
-// header('Access-Control-Allow-Methods: POST, GET');
-// header('Access-Control-Allow-Headers: Content-Type, Authorization, application/json');
-// header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, GET');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, application/json');
+header('Access-Control-Allow-Credentials: true');
 
-// Route::apiResource('summaries', 'SummaryController')->middleware('cors');
-// Route::apiResource('documents', 'DocumentController')->middleware('cors');
-// Route::apiResource('send_xml', 'DocumentController')->middleware('cors');
-
-Route::group(['middleware' => ['auth:api', 'cors']], function () {
+Route::group(['middleware' => ['auth:api']], function () {
     Route::get('services/ruc/{number}', 'Api\ServiceController@ruc');
     Route::get('services/dni/{number}', 'Api\ServiceController@dni');
 
