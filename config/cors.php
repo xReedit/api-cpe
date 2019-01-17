@@ -9,6 +9,16 @@ return [
      | to accept any value.
      |
      */
+    'defaults' => array(
+        'supportsCredentials' => false,
+        'allowedOrigins' => array('*'),
+        'allowedHeaders' => array('*'),
+        'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
+        'maxAge' => 3600,
+        'exposedHeaders' => array(),
+        'hosts' => array(),
+    ),
+
     'supportsCredentials' => false,
     'allowedOrigins' => ['*'],
     'allowedHeaders' => ['Content-Type', 'X-Requested-With', 'application/json'],
